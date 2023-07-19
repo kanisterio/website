@@ -1,0 +1,5 @@
+kanister.io
+node_modules
+package-lock.json
+# TODO: better sources?
+app/src
