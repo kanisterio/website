@@ -1,5 +1,6 @@
 
 # Kanister.io web site
+[![NodeJS with Gulp](https://github.com/kanisterio/website/actions/workflows/npm-gulp.yml/badge.svg)](https://github.com/kanisterio/website/actions/workflows/npm-gulp.yml)
 
 ## Getting started
 ### Make sure you have node/npm installed
