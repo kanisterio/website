@@ -9,7 +9,7 @@ If you have a Mac and use Homebrew, you can install with `brew install node`. Ot
 
 #### OPTIONAL: [anyenv](https://anyenv.github.io/) and nodenv for virtual node environments
 
-Visit https://nodejs.org/en and find the LTS release, at the time of this writing it was: 18.17.0, the latest was: 20.4.0
+Visit https://nodejs.org/en and find the LTS release, at the time of this writing it was: 18.17.0, the latest was: 20.11.0, but it did not seem to be available via `nodenv` for Mac Silicon.
 
 ```bash
 # the following are directory independent
@@ -24,7 +24,7 @@ anyenv install nodenv && exec $SHELL -l
 nodenv install --list | grep ^18 # 18.16.1
 nodenv install 18.16.1 && nodenv local $_ && nodenv local # confirm version
 
-# OPTIONAL: update npm and dependencies to latest
+# OPTIONAL: update npm and dependencies to latest (9.8.0 last known good)
 npm --version && npm install -g npm@latest && npm --version
 npm outdated -g --depth=0 && npm update -g corepack
 node --version && npm --version && npx --version # confirm versions
@@ -46,5 +46,7 @@ npx gulp # executes default target in gulpfile.js
 
 # OPTIONAL: to allow `gulp build`
 npm install gulp-cli
-```
 
+# OPTIONAL: browse the website
+pushd kanister.io && python3 -m http.server &
+```
