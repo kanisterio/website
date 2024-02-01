@@ -30,10 +30,10 @@ var kanisterProdFiles = [
 ];
 
 gulp.task('build-kanister', function() {
-  gutil.log(gutil.colors.green(`Copying files to kanister.io/ ...`));
+  gutil.log(gutil.colors.green(`Copying files to _site/ ...`));
   return gulp
       .src(kanisterProdFiles)
-      .pipe(gulp.dest('kanister.io/'));
+      .pipe(gulp.dest('_site/'));
 });
 
 // --------------------------------------------------
