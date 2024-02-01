@@ -51,3 +51,11 @@ npm install gulp-cli
 # OPTIONAL: browse the website
 pushd kanister.io && python3 -m http.server &
 ```
+
+## GitHub Pages
+__This is a work in progress!__
+
+Configuration details in:
+- [pages](https://github.com/kanisterio/website/settings/pages)
+- [.github/workflows/npm-gulp.yml][https://github.com/kanisterio/website/blob/main/.github/workflows/npm-gulp.yml]
+- [environments](https://github.com/kanisterio/website/settings/environments)
