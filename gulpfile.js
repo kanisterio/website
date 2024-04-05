@@ -26,7 +26,8 @@ var kanisterProdFiles = [
   'app/dist/kanister-io/*',
   'app/dist/assets/css/main.*',
   'app/dist/favicon-kanister.ico',
-  'app/dist/assets/img/kanister_thumbnail.png'
+  'app/dist/assets/img/kanister_thumbnail.png',
+  'app/dist/assets/svg/cncf-icon-color.svg'
 ];
 
 gulp.task('build-kanister', function() {
