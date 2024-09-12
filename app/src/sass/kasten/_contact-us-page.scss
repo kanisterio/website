@@ -1,0 +1,69 @@
+.contact-us-page {
+
+  .header-image {
+    padding: 4.2rem 0px;
+
+    h1 {
+      text-align: left;
+    }
+
+    h4.title {
+      margin-bottom: 4rem;
+    }
+  } // .header-image
+
+  &.demo-page {
+    h4.title {
+      text-align: left;
+    }
+  }
+
+  .section-contact-us {
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .input-group,
+    .send-button,
+    form {
+      width: 100%;
+    }
+
+    input {
+      background-color: white;
+    }
+
+    .input-group-first-name,
+    .input-group-last-name {
+      max-width: 50%;
+    }
+
+    .input-group-first-name {
+      padding-right: 5px;
+    }
+
+    .input-group-last-name {
+      padding-left: 5px;
+    }
+
+    textarea {
+    }
+
+    .send-button {
+      margin-top: 1rem;
+    }
+
+  }
+
+  @include media-breakpoint-down(xs) {
+    .header-image {
+      h1 {
+        font-size: 2.8em;
+      }
+    }
+
+
+  }
+
+} // .kanister-page

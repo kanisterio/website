@@ -1,0 +1,310 @@
+<div class="wrapper">
+  <div class="features-2 section-image header-image">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 mr-auto ml-auto mt-4">
+          <div class="kanister-graphic fade-up animate-delay1">{% include "svg/kanister-graphic-text.svg" %}</div>
+          <h4 class="title fade-left animate-delay2 font-weight-light pt-0 mb-5">
+            An extensible open-source framework for <br>application-level data management on Kubernetes
+          </h4>
+          <a href="https://github.com/kanisterio/kanister" target="new" class="btn btn-primary btn-transparent fade-left animate-delay2">
+            {% include "svg/github.svg" %} <span class="text">Fork us on Github!</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="what-is-kanister" class="section  background-dark color-white pt-0 pb-0">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg mr-auto ml-auto text-center pt-4 pb-4 fade-left animate-delay3 ">
+          <h5 class="p-3">
+            KANISTER allows domain experts to capture application specific data management tasks
+            in blueprints which can be easily shared and extended. The framework takes care of the
+            tedious details around execution on Kubernetes and presents a homogeneous operational
+            experience across applications at scale.
+          </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section kanister-is-available pt-5">
+    <div class="container">
+      <div class="row fade-up animate-delay3">
+        <div class="col-lg-5 ml-auto fade-up animate-delay3 mb-4">
+          <div class="kanister-links ml-auto mr-auto mb-3">
+            <div class="ml-auto mr-auto">
+              <h4 class="title pt-0 mt-3 mb-4">Kanister is available as an open-source project today!</h4>
+            </div>
+            <div class="social-icons ml-auto mr-auto">
+              <div class="social-icon">{% include "svg/github.svg" %} <a href="https://github.com/kanisterio/kanister" target="new">github.com/kanisterio/kanister</a></div>
+              <div class="social-icon">{% include "svg/twitter.svg" %} <a href="https://twitter.com/kanisterio" target="new">@kanisterio</a></div>
+              <div class="social-icon">{% include "svg/hashtag.svg" %} <a href="https://join.slack.com/t/kanisterio/shared_invite/enQtNzg2MDc4NzA0ODY4LTU1NDU2NDZhYjk3YmE5MWNlZWMwYzk1NjNjOGQ3NjAyMjcxMTIyNTE1YzZlMzgwYmIwNWFkNjU0NGFlMzNjNTk" target="new">#kanisterio</a></div>
+              <div class="social-icon">{% include "svg/link.svg" %} <a href="https://tiny.cc/kanisterio" target="new">tiny.cc/kanisterio</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 mr-auto">
+          <div class="terminal">
+            <div class="terminal-header"></div>
+            <pre><code class="bash">
+    $ git clone git@github.com:kanisterio/kanister.git
+    # install Kanister operator controller
+    $ kubectl apply -f bundle.yaml
+    # install your application
+    $ kubectl apply -f examples/mongo-sidecar/mongo-cluster.yaml
+    # use an existing blueprint, tweak one, or create one yourself
+    $ kubectl apply -f examples/mongo-sidecar/mongo-blueprint.yaml
+    # perform operations (requires setting secrets and configmap)
+    $ kubectl create -f examples/mongo-sidecar/backup-actionset.yaml
+            </code></pre>
+          </div> <!-- terminal -->
+        </div> <!-- col-md-5 -->
+      </div>
+    </div>
+  </section>
+
+
+  <section id="why-use-kanister" class="section why-use-kanister">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mr-auto ml-auto text-center">
+          <h2 class="title">Why Use Kanister?</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg">
+          <div class="info info-horizontal">
+            <div class="icon">
+              {% include "svg/expert.svg" %}
+            </div>
+            <div class="description">
+              <h4 class="info-title">Experts in the driver seat</h4>
+              <p>Allow experts with domain knowledge of a specific application to provide a set of required data management primitives.</p>
+              <p>Encapsulate key data management tasks in blueprints that allow uniform operations at scale.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="info info-horizontal">
+            <div class="icon">
+              {% include "svg/catalog.svg" %}
+            </div>
+            <div class="description">
+              <h4 class="info-title">Community knowledge bank</h4>
+              <p>Leverage a robust collection of blueprints for common persistent state applications maintained by the community.</p>
+              <p>Customize blueprints to fit specific needs of your environment and workload without starting from scratch.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="info info-horizontal">
+            <div class="icon">
+              {% include "svg/app.svg" %}
+            </div>
+            <div class="description">
+              <h4 class="info-title">Minimal application changes</h4>
+              <p>Keep application images unchanged by including required tools as a sidecar container or as a separate pod.</p>
+              <p>Avoid changes to the application specification in most cases. When needed, use simple annotations.</p>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section>
+
+  <section id="getting-started" class="section three-easy-steps">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg mr-auto ml-auto text-center">
+          <h2 class="title">Getting started with Kanister <br>in three easy steps</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ml-auto mr-auto">
+
+          <div class="step">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="circle-step"><div class="circle-number">1</div><h3 class="step-title">Identify the need for customization</h3></div>
+              </div>
+            </div> <!-- row -->
+            <div class="row">
+              <div class="col-md-11">
+                <p class="sub-step-title">A Kanister custom blueprint may be needed ...</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 sub-step-box ml-auto">
+                <div class="icon-left pt-2">
+                  {% include "svg/data-model.svg" %}
+                </div>
+                <div class="content-right">
+                  ... when application-level management
+                  is required for data stores, including
+                  distributed and eventually consistent
+                  ones, or for local-storage only systems.
+                </div>
+              </div>
+              <div class="col-md-6 sub-step-box">
+                <div class="icon-left pt-0">
+                  {% include "svg/gear-wrench.svg" %}
+                </div>
+                <div class="content-right">
+                  ... for complex distributed applications
+                  which use custom mechanism to
+                  coordinate data persistence across
+                  several different data repositories.
+                </div>
+              </div>
+            </div>
+          </div> <!-- step -->
+
+          <div class="step">
+            <div class="row">
+              <div class="col-lg-10">
+                <div class="circle-step mb-4"><div class="circle-number">2</div><h3 class="step-title">Use an existing blueprint or author your own</h3></div>
+              </div>
+            </div> <!-- row -->
+            <div class="row">
+              <div class="col-md-6">
+                <p class="mb-5">
+                  Determine if a community contributed blueprint exists for your application. You can always customize it for your specific needs or create a custom solution.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="kanister-diagram">{% include "svg/kanister-sidecar-diagram.svg" %}</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 ml-auto">
+                <h5 class="font-weight-bold">Application Definition</h5>
+                <div class="code-container">
+                  <div class="highlight-box">&nbsp;</div>
+                  {% raw %} <!-- this prevents the template engine from compiling these: {{ }} -->
+                  <div class="terminal">
+                    <div class="terminal-header"></div>
+                    <pre class="code-box1"><code class="yaml">
+    apiVersion: apps/v1beta1
+    kind: StatefulSet
+    metadata:
+      name: mongo
+    spec:
+      serviceName: "mongo"
+      replicas: 3
+      template:
+        metadata:
+          labels:
+            role: mongo
+          annotations:
+            kanister.kasten.io/blueprint: mongodb
+                    </code></pre>
+                  </div> <!-- terminal -->
+                </div> <!-- code-container -->
+              </div> <!-- col-md5 -->
+              <div class="col-lg-6 ml-auto">
+
+                <h5 class="code-box2-title font-weight-bold">Kanister Blueprint</h5>
+                <div class="terminal">
+                  <div class="terminal-header"></div>
+                  <pre class="code-box2"><code class="yaml">
+    actions:
+      backup:
+        type: StatefulSet
+        phases:
+        - func: KubeExec
+          name: backupPhase
+          args:
+            namespace: '{{ .StatefulSet.Namespace }}'
+            pod: '{{ index .StatefulSet.Pods 0 }}'
+            container: '{{ index .StatefulSet.Containers 0 0 }}'
+            command:
+              - bash
+              - -c
+              - mongodb-consistent-backup ...
+
+      restore:
+        type: StatefulSet
+        phases:
+        - func: KubeExec
+          name: restorePhase
+          args:
+          namespace: '{{ .StatefulSet.Namespace }}'
+          pod: '{{ index .StatefulSet.Pods 0 }}'
+          container: '{{ index .StatefulSet.Containers 0 0 }}'
+          command:
+            - bash
+            - -c
+            - mongorestore ...
+
+      migrate:
+      ...
+      othercustomaction:
+                  </code></pre>
+                </div> <!-- terminal -->
+                {% endraw %}
+              </div> <!-- col-md5 -->
+            </div> <!-- row -->
+          </div> <!-- step -->
+
+          <div class="step">
+            <div class="row">
+              <div class="col-lg-10">
+                <div class="circle-step"><div class="circle-number">3</div><h3 class="step-title">Leverage Kanister</h3></div>
+              </div>
+            </div> <!-- row -->
+            <div class="row">
+              <div class="col-lg-6 ml-auto">
+                <p>
+                  Kanister is based on the operator pattern and provides a consistent interface for data management operations accross applications.
+                </p>
+                <p>
+                  The framework handles low-level Kubernetes details around execution and monitoring allowing you to focus on operational logic.
+                </p>
+              </div>
+              <div class="col-lg-6 mr-auto">
+                <div class="terminal">
+                  <div class="terminal-header"></div>
+                  <pre><code class="bash">
+    $ cat &lt;&lt;EOF | kubectl apply -f -
+
+    apiVersion: cr.kanister.io/v1alpha1
+    kind: ActionSet
+    metadata:
+      generateName: mongo-backup-
+    spec:
+      actions:
+        - name: backup
+          blueprint: mongo-blueprint
+          object:
+            kind: StatefulSet
+            name: mongo-cluster
+            namespace: default
+          profile:
+            apiVersion: v1alpha1
+            kind: profile
+            name: default-profile
+            namespace: default
+          ...
+
+    EOF
+                    </code></pre>
+                </div> <!-- terminal -->
+              </div>
+            </div>
+          </div> <!-- step -->
+
+        </div> <!-- col-md-10 -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+
+  </section>
+
+</div>

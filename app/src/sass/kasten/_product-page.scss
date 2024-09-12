@@ -1,0 +1,295 @@
+.product-pg {
+  .header-image {
+    background: radial-gradient(circle farthest-corner at right bottom, #003441 0, #1a465d 100%);
+    color: white;
+    padding: 7rem 0 7rem 0;
+
+    .left-side {
+      text-align: left;
+      margin-left: 8rem;
+      max-width: 45rem;
+
+      .k10-logo {
+        padding-top: 2rem;
+
+        svg {
+          max-width: 23rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+
+      .title {
+        font-size: 2.8rem;
+        color: $color-grey-text;
+      }
+    }
+
+    .right-side {
+      img {
+        padding-top: 5px;
+        border: none;
+        max-width: 90%;
+      }
+    }
+  }
+
+  .section-three-steps {
+    h2 {
+      font-size: 2.4em;
+    }
+
+    .feature-box-1 {
+      .feature-title {
+        font-size: 1.4rem;
+      }
+
+      .circle-number {
+        font-size: 1.6rem;
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+
+  .section-benefits {
+    background-color: #141d24;
+    color: white;
+
+    .description {
+      font-size: 1.2rem;
+    }
+
+    img {
+      width: 100%;
+      max-width: 60rem;
+      border-radius: 10px;
+      padding: 0.5rem;
+      margin: 1rem auto 3rem auto;
+      background-color: white;
+    }
+
+    .diagram {
+      .diagram-points {
+        max-width: 39rem;
+        padding-left: 5rem;
+        li {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .feature-box-2 {
+      .feature-title {
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: $color-yellow;
+      }
+    }
+
+
+  }
+
+  .section.ecosystem {
+    img.ecosystem-diagram {
+      max-width: 90%;
+    }
+    table {
+      th {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .section.capabilities {
+    background-color: #f5f8fa;
+
+    .row {
+      margin-bottom: 6rem;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: $box-shadow;
+      padding: 0.5rem;
+      background-color: white;
+    }
+    img.install {
+      padding: 1rem 3rem;
+      background-color: #09090a;
+    }
+    .feature-box-1 {
+      .feature-title {
+        margin-bottom: 0.6rem;
+      }
+    }
+    .row {
+      &.img-left .feature-box-1 {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  .section.editions {
+    padding: 2.5rem 0;
+
+    button.starter {
+      background-color: $color-green;
+    }
+    button.enterprise {
+      background-color: $color-logo-blue;
+    }
+
+    table {
+      margin: 2rem 0;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      box-shadow: $box-shadow;
+
+      thead {
+        background-color: #F7F7F7;
+        td, th {
+          text-align: center;
+        }
+        th {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #4a4a4a;
+          padding: 1rem;
+          white-space: nowrap;
+        }
+      }
+      tr {
+        border-top: 1px solid #e6e6e6;
+        background-color: white;
+      }
+      tr.sec-head {
+        background-color: #f6f9fc;
+        td, th {
+          padding: 0.5rem 1rem;
+          white-space: nowrap;
+        }
+        &.last {
+          td {
+            font-size: 0.9rem;
+            color: $body-color;
+            padding: 1rem;
+          }
+        }
+      }
+      td, th {
+        padding: 0.5rem 1rem;
+        &.sub {
+          padding-left: 2rem;
+          font-weight: normal;
+        }
+      }
+      td {
+        color: #4a4a4a;
+        font-size: 1.3rem;
+        text-align: center;
+        color: $color-green;
+      }
+    }
+
+  }
+
+  .section.learn-more {
+    background-color: #141d24;
+    color: white;
+
+    .icon {
+      color: $color-green;
+    }
+
+    .btn-success {
+      background-color: $color-green;
+    }
+
+    .use-cases {
+      a {
+        font-size: 1.2em;
+
+        .svg-icon {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .header-image {
+      .left-side {
+        margin: 0 auto !important;
+      }
+    }
+    .section.editions {
+      table {
+        tr.sec-head {
+          th, td {
+            white-space: normal;
+          }
+        }
+        td {
+          padding: 0.5rem 0.2rem;
+        }
+        .hidden-sm-down {
+          display: none;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    .section-three-steps {
+      .feature-box-1 {
+        margin-bottom: 2rem;
+      }
+    }
+    .section-benefits {
+      .diagram {
+        img {
+          margin-bottom: 2rem;
+        }
+        .diagram-points {
+          margin-bottom: 3rem;
+          padding-left: 2rem;
+          div {
+            margin-bottom: 1rem;
+            &.first {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .section.ecosystem {
+      table th {
+        white-space: normal;
+      }
+      .row {
+        // Causes page wider than screen
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .section.capabilities {
+      .row {
+        margin-bottom: 3rem;
+      }
+      .feature-box-1 {
+        margin-top: 1rem;
+        margin-left: 0 !important;
+      }
+    }
+
+    .section.learn-more {
+      .feature-box-1 {
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+  }
+} // .product-pg

@@ -1,0 +1,455 @@
+body {
+  background-color: #010203;
+  .navbar {
+    margin-bottom: -4rem;
+    z-index: 1000;
+    .nav-item {
+      height: 45px;
+    }
+  }
+}
+
+.container-fluid.page-title {
+  .row {
+    padding-left: 1.5rem;
+  }
+}
+
+.container-fluid.use-cases .row {
+  padding-left: 1rem;
+}
+
+.landing-page {
+  .announcement-banner {
+    padding: 1rem 28rem;
+    margin: 0 -20rem;
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #feee9e; //#124251; //#2d6e82;
+    color: #333;
+    .banner-content {
+      max-width: 100%;
+    }
+    a {
+      color: #33333394;
+    }
+  }
+
+  .containers-image {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(black),
+        to(rgba(0, 0, 0, 0.2))
+      ),
+      url(../img/background/extracolor5.jpg);
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.2)),
+      url(../img/background/extracolor5.jpg);
+    background-color: #293b60;
+  }
+
+  .version2 {
+    z-index: 1200;
+    display: inline-block;
+    background-color: $color-logo-aqua;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    a {
+      color: $body-color;
+    }
+  }
+
+  .announcment-boxes {
+    margin-top: 5rem;
+
+    .box {
+      z-index: 100;
+      background-color: rgba(46, 65, 72, 0.4);
+      color: white;
+      padding: 2rem 3rem;
+      margin-right: 5px;
+      max-width: 40rem;
+      .announce-title {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      .video-container {
+        margin-bottom: 0;
+      }
+      a {
+        color: white;
+      }
+    }
+    .box.one {
+      .announce-title {
+        font-size: 1.3rem;
+      }
+      a {
+        font-size: 1.1rem;
+        color: mediumaquamarine;
+      }
+    }
+    .box.two {
+      .video-container {
+        max-width: 14rem;
+      }
+    }
+  }
+
+  .page-header {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+
+    &.page-header-small {
+      max-height: 600px;
+      height: 120vh;
+    }
+    color: $color-grey-text;
+    .title {
+      display: inline;
+      padding: 0;
+      height: 100vh;
+    }
+    .title,
+    .sub-title {
+      color: $color-grey-text;
+      letter-spacing: -1px;
+    }
+    .sub-title {
+      max-width: 45rem;
+    }
+
+    .use-cases {
+      .feature-box-1 {
+        position: relative;
+        z-index: 100;
+        padding: 1rem;
+        .feature-title {
+          font-weight: normal;
+          a {
+            color: $color-yellow;
+          }
+        }
+      }
+    }
+
+    .container-fluid {
+      padding-top: 10vh;
+      .row:first-of-type {
+        padding-top: 30px;
+      }
+      max-width: 1200px;
+
+      .home-buttons {
+        position: relative;
+        z-index: 100;
+        margin-top: 5vh;
+        .btn {
+          .svg-icon {
+            margin-left: 1rem;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .product-image {
+      padding-top: 0rem;
+      text-align: center;
+      img {
+        max-width: 640px;
+        width: 92%;
+      }
+    }
+  }
+
+  .container-fluid.use-cases {
+    padding-top: 5vh;
+  }
+
+  .input-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .upcoming-events {
+    .event-container {
+      display: flex;
+      justify-content: space-around;
+    }
+    .upcoming-event {
+      text-align: center;
+      .subtext {
+        font-size: 0.8rem;
+      }
+    }
+    .upcoming-event.cns {
+    }
+    img {
+      height: 5rem;
+      margin-bottom: 1rem;
+    }
+    .veeamon-logo {
+      max-width: 25rem;
+    }
+    .icon-container {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .section-sub-band {
+    background-color: #0d0f12;
+    color: white;
+    padding: 4rem 0;
+
+    .video-wrapper {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    h4 {
+      margin: 0;
+    }
+    .kubecon-logo {
+      height: 4rem;
+    }
+
+    .left-col {
+      max-width: 25rem;
+    }
+    .video-section-title {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+    }
+    .sub-text {
+      font-size: 1.15rem;
+    }
+    .video-container {
+      margin-bottom: 0;
+      .video-title {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .info {
+    .icon {
+      color: $color-dark;
+      height: 4.3rem;
+      width: 4.3rem;
+      display: inline-flex;
+      align-items: flex-end;
+    }
+
+    p {
+      color: $color-dark;
+    }
+  }
+
+  .section .title {
+    padding-top: 0;
+  }
+
+  .section-home-highlight-1 {
+    background-color: white;
+    color: black;
+    padding-bottom: 3.75rem;
+    svg {
+      width: auto;
+      height: 3.75rem;
+    }
+  }
+
+  .section-partners {
+    .openshift-background {
+      background-color: #333;
+      display: inline-block;
+      padding: 6px 15px 1px 14px;
+      border-radius: 5px;
+    }
+  }
+
+  .section-our-approach {
+    background-color: #010306;
+
+    color: white; // 121f34
+
+    .info {
+      padding-top: 1.25rem;
+      max-width: none;
+      text-align: left;
+      .icon {
+        padding-left: 15px;
+        color: $color-yellow;
+      }
+      .info-title {
+        margin-top: 0.8rem;
+        color: white;
+      }
+      .description {
+        color: white
+      }
+
+      svg {
+        width: 2.2rem;
+        height: auto;
+      }
+    }
+  }
+
+  .section-purpose-built {
+    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+    background-blend-mode: normal,color-burn;
+    h5 {
+      line-height: 1.8;
+    }
+  }
+
+  .section-about-us {
+    padding: 0;
+  }
+
+  .section-contact-us {
+    background-color: $color-lightgrey-bg;
+
+    input {
+      background-color: white;
+    }
+    .input-group-first-name,
+    .input-group-last-name {
+      max-width: 50%;
+    }
+    .input-group,
+    .send-button {
+      padding: 0 5px;
+    }
+  }
+
+  .send-button {
+    width: 100%;
+  }
+
+
+  @include media-breakpoint-down(lg) {
+    .container-fluid.page-title .row {
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    h1.title {
+      font-size: 3rem;
+    }
+
+    .page-header .product-image img {
+      width: 90%;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .announcement-banner {
+      padding: 0.5rem 19rem;
+      height: auto;
+      font-size: 0.8rem;
+    }
+    h1.title {
+      font-size: 3.5em;
+    }
+
+    .container-fluid.page-title .row {
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .page-header.page-header-small {
+      max-height: 36rem;
+    }
+
+  }
+
+  @include media-breakpoint-down(xs) {
+    .page-header {
+      .announcement-banner {
+        padding-left: 20rem;
+        padding-right: 20rem;
+      }
+      .announcment-boxes {
+        margin: 5rem 0 5px 0;
+
+        .box {
+          margin: 0 0 1rem 0 !important;
+        }
+        .upcoming-events {
+          text-align: center;
+          .upcoming-event {
+            margin: 0;
+          }
+        }
+        .event-container {
+          flex-wrap: wrap;
+          .upcoming-event {
+            margin: 1rem auto;
+          }
+        }
+      }
+
+      .container-fluid.page-title .row {
+        padding-left: 1rem;
+        img {
+          //display: none;
+        }
+      }
+      .container-fluid.use-cases .row {
+        padding-left: 0;
+      }
+
+    }
+
+    .icon-container {
+      flex-wrap: wrap;
+      .upcoming-event {
+        margin-bottom: 2rem;
+      }
+    }
+    h1.title {
+      font-size: 2.2rem;
+    }
+    h3.sub-title {
+      font-size: 1.3rem;
+    }
+    .section-kubecon {
+      h4 {
+        font-size: 1.3rem;
+      }
+      .kubecon-logo {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .section-home-highlight-1 {
+      text-align: center;
+
+      svg {
+        height: 2.8rem;
+      }
+    }
+
+    .section-contact-us h5 {
+      text-align: left;
+    }
+  }
+} // landing page

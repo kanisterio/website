@@ -1,0 +1,137 @@
+.data-platform-pg {
+  .header-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('../img/background/1.png');
+    background-color: #4c4c4c;
+    color: white;
+  }
+
+  section.cloud-providers {
+    background-color: $color-lightgrey-bg;
+
+    .provider {
+      padding: 1.5rem 1rem;
+      height: 25%;
+      border: 1px solid transparent;
+      position: relative;
+
+      &.active, &:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+
+      svg {
+        height: 3rem;
+        width: 80%;
+      }
+    }
+
+    .bullet-points-container {
+      background-color: white;
+      margin-left: -2rem;
+      height: 470px;
+    }
+
+    .bullet-points {
+      background-color: white;
+      padding: 3rem 4rem 2rem 4rem;
+      min-height: 10rem;
+      .bullet {
+        display: flex;
+        font-weight: 500;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        .bullet-icon {
+          padding-right: 1.2rem;
+        }
+        svg {
+          height: 1.2em;
+          color: $color-green;
+          fill: currentColor;
+          vertical-align: middle;
+        }
+      }
+    }
+  } // sectoin.cloud-providers
+
+  section.on-premises-deployments {
+    .icons-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .on-prem-icon {
+      text-align: center;
+      margin: 0 2rem 2rem 0;
+      padding: 1.5rem 0.5rem;
+      width: 14rem;
+      background-color: #f5f5f5;
+      border-radius: 1rem;
+      svg {
+        height: 4rem;
+        width: 4rem;
+        margin-bottom: 0.3rem;
+      }
+      .icon-text {
+        font-size: 1.4rem;
+      }
+    }
+    .key-features {
+      h3 {
+        margin-bottom: 3rem;
+      }
+    }
+    .feature {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      text-indent: -2.6rem;
+      padding-left: 2.6rem;
+      svg {
+        height: 0.8em;
+        width: 0.8em;
+        vertical-align: middle;
+        margin-right: 1rem;
+        color: $color-logo-aqua-text;
+      }
+    }
+  }
+
+
+  @include media-breakpoint-down(xs) {
+    .header-image {
+      h1.title {
+        font-size: 2.4em;
+      }
+    }
+    section.cloud-providers {
+      .provider-container {
+        margin-bottom: 1rem;
+      }
+      .bullet-points-container {
+        margin-left: 0;
+        height: auto;
+
+        .bullet-points {
+          padding: 3rem 0 2rem 0;
+        }
+      }
+    }
+    section.on-premises-deployments {
+      .icons-container {
+        justify-content: center;
+      }
+      .on-prem-icon {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      .key-features {
+        margin-top: 3rem;
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
+
+

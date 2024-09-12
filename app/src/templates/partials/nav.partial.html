@@ -1,0 +1,90 @@
+<nav>
+
+  <div class="close-btn">{% include "svg/close.svg" %}</div>
+  <div class="menu-btn">{% include "svg/menu.svg" %}</div>
+
+  <div class="container">
+
+    <div class="kasten-logo">
+      <a href="/">{% include "svg/kasten-logo.svg" %}</a>
+    </div>
+
+    <div class="items fade-in">
+      <div class="navitem home"><a href="/">Home</a></div>
+      <div class="navitem"><a href="/product/">Product</a></div>
+      <div class="navitem">
+        <div class="item-name">Use Cases {% include "svg/chevron-down.svg" %}</div>
+        <div class="mega-menu use-cases fade-in">
+
+          <div class="menu-item">
+            <a href="/use-cases/backup-recovery/">
+              <div class="feature-box-1">
+                <div class="feature-title mb-1">Backup and Restore</div>
+                <div class="feature-description">K10 helps backup and restore your <br/>applications to protect your data</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="/use-cases/disaster-recovery/">
+              <div class="feature-box-1">
+                <div class="feature-title mb-1">Disaster Recovery</div>
+                <div class="feature-description">Meet regulatory and corporate mandates <br/>for your business</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="/use-cases/app-migration/">
+              <div class="feature-box-1">
+                <div class="feature-title mb-1">Application Migration</div>
+                <div class="feature-description">Move between clouds and on-prem for <br>load balancing and upgrades</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navitem"><a href="/resources/">Resources</a></div>
+      <div class="navitem"><a href="https://docs.kasten.io/">Docs</a></div>
+      <div class="navitem">
+        <div class="item-name">Company {% include "svg/chevron-down.svg" %}</div>
+        <div class="mega-menu company fade-in">
+
+          <div class="menu-item">
+            <a href="https://blog.kasten.io">
+              <div class="feature-box-1">
+                <div class="feature-title mb-1">Blog</div>
+                <div class="feature-description">All Things Kubernetes <br>and Data Management</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="/careers/">
+              <div class="feature-box-1">
+                <div class="feature-title mb-1">Careers</div>
+                <div class="feature-description">We're looking for great people <br>to join our growing team.</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="/news/">
+              <div class="feature-box-1">
+                <div class="feature-title mb-1">News</div>
+                <div class="feature-description">Kasten in the news, podcasts, <br>and press releases</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-item">
+            <a href="/aboutus/">
+              <div class="feature-box-1">
+                <div class="feature-title mb-1">About Us</div>
+                <div class="feature-description">Kasten's growing team <br>and office locations</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div><a href="/contactus/"><button type="button" class="btn btn-sm btn-outline-warning ml-2 mr-3">Contact Us</button></a></div>
+      <div><a href="https://docs.kasten.io/install/index.html"><button type="button" class="btn btn-sm btn-outline-warning">Try K10 Free</button></a></div>
+    </div> <!-- items -->
+
+  </div> <!-- container -->
+</nav>

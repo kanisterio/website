@@ -1,0 +1,248 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<title>Kasten - Cloud-Native Data Management for Kubernetes</title>
+{% endblock %}
+
+{% block javascript %}
+{% include "partials/hubspot.partial.js" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="landing-page">
+
+  {% include "partials/nav.partial.html" %}
+
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <div class="page-header">
+
+      <div class="page-header-image containers-image" data-parallax="true">
+      </div>
+
+      <div class="container-fluid page-title">
+        <div class="row">
+          <div class="col-lg-6 order-lg-1">
+            <img class="mt-3" src="/assets/img/home/desktop.png"/>
+          </div>
+          <div class="col-lg-6 order-lg-0" style="z-index: 100">
+            <h1 class="title fade-left">Cloud-Native <span class="text-nowrap">Data Management</span> for Kubernetes</h1>
+            <h4 class="sub-title fade-left mt-5">Kasten is tackling Day 2 data management challenges to help enterprises confidently run applications on Kubernetes.</h4>
+
+            <div class="version2 mt-3 fade-in animate-delay2" hidden>
+              <a href="http://blog.kasten.io/posts/announcing_kasten_k10_version_2/">Version 2.0 now available</a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- container-fluid -->
+
+      <div class="container-fluid use-cases">
+        <div class="row use-cases">
+          <div class="col-md">
+            <div class="feature-box-1">
+              <div class="feature-title mb-2"><a href="/use-cases/backup-recovery/">Backup and Restore {% include "svg/right-arrow-alt2.svg" %}</a></div>
+              <div class="feature-description">Backup and restore your applications to protect your data</div>
+            </div>
+          </div> <!-- col-md -->
+          <div class="col-md">
+            <div class="feature-box-1">
+              <div class="feature-title mb-2"><a href="/use-cases/disaster-recovery/">Disaster Recovery {% include "svg/right-arrow-alt2.svg" %}</a></div>
+              <div class="feature-description">Meet regulatory and corporate mandates for your business</div>
+            </div>
+          </div> <!-- col-md -->
+          <div class="col-md">
+            <div class="feature-box-1">
+              <div class="feature-title mb-2"><a href="/use-cases/app-migration/">Application Mobility {% include "svg/right-arrow-alt2.svg" %}</a></div>
+              <div class="feature-description">Move between clouds and on-prem for load balancing and upgrades</div>
+            </div>
+          </div> <!-- col-md -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+
+      <div class="row announcment-boxes">
+        <div class="col-md box one">
+          <div class="announce-title mb-3">Kasten recognized as the company to follow for data protection for containers</div>
+          <div class="sub-title mb-3 ml-3"><div class="" style="max-width: 85%;">{% include "svg/quote-start.svg" %} &nbsp; Hill [451 Research] and Chhabra [Forrester Research] each independently called out Kasten as a company worth following... &nbsp; {% include "svg/quote-end.svg" %}</div></div>
+          <a href="https://searchdatabackup.techtarget.com/news/252476737/Backup-focus-in-2020-Data-at-the-edge-and-in-containers" class="pl-3">Read {% include "svg/right-arrow-alt2.svg" %}</a>
+        </div>
+        <div class="col-md box two">
+          <div class="announce-title mb-4 text-align-center">See Our Platform in Action</div>
+          <div class="video-container ml-auto mr-auto"
+               data-video-id="jTX4Qb7nhoM">
+            <div class="video-thumb">
+              <img src="/assets/img/home/guided-tour-video-thumb.png"/>
+              <div class="video-overlay light"></div>
+              <div class="video-icon light"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md box three">
+          <div class="icon-container upcoming-events">
+            <div class="announce-title mb-4">Visit Kasten at These Upcoming Events</div>
+            <div class="event-container">
+              <div class="upcoming-event kubecon">
+                <a href="https://events19.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2020/" target="new">
+                  <img class="kubecon-logo" src="/assets/img/home/kccnc-eu-2020-white.png"/>
+                  <div class="subtext"><span class="text-nowrap">Amsterdam, Mar 30 – Apr 2, 2020</span></div>
+                </a>
+              </div>
+              <div class="upcoming-event cns">
+                <a href="https://www.redhat.com/en/summit" target="new">
+                  <img alt="Cloud Native Storage Day" src="/assets/img/home/redhat-summit-logo.svg"/>
+                  <div class="subtext"><span class="text-nowrap">San Francisco,</span> <span class="text-nowrap">Apr 27-29</span></div>
+                </a>
+              </div>
+            </div><!-- d-flex -->
+          </div> <!-- upcoming-events -->
+        </div> <!-- .box -->
+      </div> <!-- announcement-boxes -->
+    </div> <!-- page-header -->
+
+    <div class="section section-home-highlight-2 section-our-approach">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h2 class="title">Our Approach</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xl-3">
+            <div class="info">
+              <div class="icon">
+                {% include "svg/home/app-centric.svg" %}
+              </div>
+              <h4 class="info-title">App-Centric</h4>
+              <p class="description">
+                Focus on applications as the data management operational unit. Neatly abstract infrastructure complexity.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="info">
+              <div class="icon">
+                {% include "svg/home/kubernetes-native.svg" %}
+              </div>
+              <h4 class="info-title">Kubernetes Native</h4>
+              <p class="description">
+                Built specifically for cloud-native environments. Handle dynamic applications on Kubernetes with ease.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="info">
+              <div class="icon">
+                {% include "svg/home/multi-cloud.svg" %}
+              </div>
+              <h4 class="info-title">Multi-Cloud</h4>
+              <p class="description">
+                Run on any public or private cloud Kubernetes deployment. Seamlessly move applications across underlying infrastructure.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="info">
+              <div class="icon">
+                {% include "svg/home/db-aware.svg" %}
+              </div>
+              <h4 class="info-title">Database Aware</h4>
+              <p class="description">
+                Robust data protection and migration specifically tailored and optimized for popular relational and NoSQL databases.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-purpose-built">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 ml-auto mr-auto">
+            <a href="/product">
+              <img class="mb-4" src="/assets/img/product/k10_v2_dashboard.png">
+            </a>
+          </div>
+          <div class="offset-lg-1 col-md-6 ml-auto mr-auto">
+            <h5 class="mt-3">
+              The K10 data management platform, purpose-built for Kubernetes, provides enterprise
+              operations teams an easy-to-use, scalable, and secure system for backup/restore,
+              disaster recovery, and mobility of Kubernetes applications.
+            </h5>
+            <h5><a href="/product">Learn more {% include "svg/right-arrow-alt2.svg" %}</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-home-highlight-1 section-partners" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center mb-3">
+            <h2 class="title">Partners</h2>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm mb-5">
+            {% include "svg/home/google-cloud-partner.svg" %}
+          </div>
+          <div class="col-sm mb-5">
+            {% include "svg/home/aws.svg" %}
+          </div>
+          <div class="col-sm mb-5">
+            {% include "svg/home/cncf-horizontal2.svg" %}
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm mb-5">
+            {% include "svg/home/ibm-cloud.svg" %}
+          </div>
+          <div class="col-sm mb-5">
+            {% include "svg/home/azure.svg" %}
+          </div>
+          <div class="col-sm mb-5">
+            <div class="openshift-background">{% include "svg/home/openshift.svg" %}</div>
+          </div>
+          <div class="col-sm mb-5">
+            <a target="new" href="https://marketplace.vmware.com/vsx/solutions/kasten-k10-1-1-50">
+            <img style="max-width: 175px;" src="/assets/img/home/prtnr-vmw-pks.png"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <h3 class="title">Learn More</h3>
+            <h5 class="">
+              Are you interested in learning more and seeing a demo? <br/>
+            </h5>
+            <h5 class="mb-5">
+              Please submit your information below and someone will get back to you shortly.
+            </h5>
+          </div> <!-- col -->
+          <div class="offset-md-1 col-md input-container">
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+            <script>
+              hbspt.forms.create({
+                portalId: "3855032",
+                formId: "a84ad55e-408b-4c27-bbae-b6eaaac05d9d"
+              });
+            </script>
+          </div>
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </div> <!-- section -->
+
+  </div>
+
+  <footer>
+    {% include "partials/contact-footer.partial.html" %}
+  </footer>
+</div>
+
+{% endblock %}
+

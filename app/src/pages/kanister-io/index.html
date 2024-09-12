@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="/favicon-kanister.ico">
+{% endblock %}
+
+{% block metatags %}
+<meta name="description" content="Kanister allows domain experts to capture application-specific data management tasks in blueprints which can be easily shared and extended. The framework takes care of the tedious details around execution on Kubernetes and presents a homogeneous operational experience across applications at scale.">
+<meta name="keywords" content="kubernetes,data management,container,stateful container,data protection,cloud native">
+<!-- Twitter card - also used when pasting where previews are loaded eg Slack -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kanister" />
+<meta name="twitter:description" content="Kanister allows domain experts to capture application specific data management tasks in blueprints which can be easily shared and extended. The framework takes care of the tedious details around execution on Kubernetes and presents a homogeneous operational experience across applications at scale." />
+<meta name="twitter:site" content="@kanisterio" />
+<meta name="twitter:image" content="https://kanister.io/kanister_thumbnail.png" />
+<meta name="twitter:creator" content="@kanisterio" />
+<!-- end Twitter card -->
+
+{% endblock %}
+
+{% block css %}
+<link href="./main.css" rel="stylesheet" />
+{% endblock %}
+
+
+{% block head %}
+<link rel="stylesheet" href="//highlightjs.org/static/demo/styles/vs2015.css">
+<title>Kanister - An extensible framework for application-level data management on Kubernetes</title>
+{% endblock %}
+
+{% block javascript %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var currentYear = new Date().getFullYear();
+    var el = document.querySelector('.copyright .to-date');
+    el.innerHTML = '-' + currentYear;
+  });
+</script>
+{% endblock %}
+
+{% block main_script %}
+<!-- no main script -->
+{% endblock %}
+
+
+{% block content %}
+
+<div class="kanister-page kanister-io">
+
+  {% include "partials/kanister/nav.partial.html" %}
+
+
+  {% include "partials/kanister/content.partial.html" %}
+
+  <footer>
+    {% include "partials/kanister/footer.partial.html" %}
+  </footer>
+
+</div>
+
+{% endblock %}
+

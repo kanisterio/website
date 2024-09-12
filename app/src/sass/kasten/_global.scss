@@ -1,0 +1,351 @@
+body {
+  // Fix flash of unstyled content in firefox
+  // Is set to display:none in <style> in layout.html
+  display: block;
+}
+
+form {
+  .form-control::placeholder {
+    color: $gray-600 !important;
+  }
+}
+// HubSpot's form submission response message
+.hbspt-form .submitted-message {
+  font-size: 1.4rem;
+  font-family: $sans-serif-family;
+  font-weight: bold;
+  line-height: 1.4;
+  color: $body-color;
+}
+
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), radial-gradient(circle farthest-corner at right bottom, #003441 0, #1a465d 100%);
+  h1 {
+    font-size: 3rem;
+    &.title {
+      color: $color-grey-text;
+    }
+  }
+}
+
+
+.background-grey {
+  background-color: #f7f7f7;
+}
+
+.background-grey-200 {
+  background-color: #efefef;
+}
+
+.background-dark {
+  background-color: #0d0f12;
+  color: white;
+}
+
+.color-white {
+  color: white;
+}
+.color-blue {
+  color: $color-logo-blue;
+}
+.color-aqua {
+  color: $color-logo-aqua-text;
+}
+.color-red {
+  color: $color-red;
+}
+.color-green {
+  color: $color-green;
+}
+.color-body {
+  color: $body-color;
+}
+
+.text-align-center {
+  text-align: center;
+}
+.text-small {
+  font-size: 0.8rem;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-detail {
+  font-size: 0.8rem;
+  color: $text-muted;
+}
+
+.font-weight-light {
+  font-weight: $font-weight-light;
+}
+
+.border-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8571em;
+  line-height: 3.5;
+}
+
+.boxed {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 0.3rem 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*
+  Icons
+ */
+.svg-icon {
+  height: 1em;
+  width: 1em;
+  margin-top: -0.15em;
+  fill: currentColor;
+  vertical-align: middle;
+  &.icon-larger {
+    height: 1.4em;
+    width: 1.4em;
+  }
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: currentColor;
+}
+
+.svg-icon circle {
+  stroke: currentColor;
+  stroke-width: 1;
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+footer {
+  .section {
+    background: inherit;
+  }
+  .col-sm div {
+    margin-left: 6rem;
+    a {
+      color: $body-color;
+      padding-bottom: 0.8rem;
+    }
+  }
+}
+
+footer.footer.contact-footer {
+  background-color: $color-dark;
+  color: white;
+  padding-top: 3rem;
+
+  .kasten-logo svg {
+    height: 2rem;
+  }
+
+  a {
+    color: white;
+  }
+  hr {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .social-buttons {
+    display: flex;
+    a {
+      padding: 0 1rem 0 0;
+    }
+    svg {
+      vertical-align: bottom;
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    .column {
+      margin-bottom: 2rem;
+      margin-left: 2rem;
+    }
+  }
+}
+
+.terminal {
+  .terminal-header {
+    background-color: #34393e;
+    border-bottom: 1px solid #ffffff40;
+    border-radius: 7px 7px 0 0;
+    color: $color-green;
+    display: block;
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding-left: 8px;
+    text-align: left;
+    width: 100%;
+    &::after {
+      content: '•••';
+    }
+  }
+  pre {
+    border-radius: 0 0 7px 7px;
+  }
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 2rem;
+  right: 2rem;
+  padding: 1rem 3rem;
+  display: flex;
+  background-color: $gray-800;
+  color: white;
+  max-width: 76rem;
+  margin: 0 auto;
+  z-index: 1000;
+
+  .left-side {
+    margin-right: 2rem;
+    .consent-title {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .consent-content {
+      font-size: 0.85rem;
+      align-items: center;
+    }
+  }
+  .right-side {
+    display: flex;
+    align-items: center;
+    button {
+      background-color: slategray;
+    }
+  }
+}
+
+.feature-box-1 {
+  .icon {
+    font-size: 2rem;
+  }
+  .feature-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+}
+
+.feature-box-2 {
+  display: flex;
+  .icon {
+    font-size: 2.8rem;
+    margin-right: 1.5rem;
+    svg {
+      margin-top: -20px;
+    }
+  }
+  .feature-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .feature-description {
+    font-size: 1rem;
+  }
+}
+
+.circle-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $color-logo-blue;
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+  width: 3.4rem;
+  height: 3.2rem;
+}
+
+/**
+ Responsive breakpoints
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { ... }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+ */
+
+@include media-breakpoint-down(xs) {
+  html {
+    font-size: 14px;
+  }
+  body .navbar {
+    .kasten-logo {
+      height: 20px;
+    }
+    .dropdown .dropdown-item {
+      background-color: #1A1920;
+      border-color: transparent;
+    }
+    .nav-item {
+      height: auto !important;
+      .btn {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .cookie-banner {
+    flex-wrap: wrap;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .fullscreen-centered .video-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    transition-timing-function: ease;
+    background: #1b1920;
+    text-align: center;
+    .dropdown-menu {
+      text-align: center;
+    }
+    &:after {
+      background: none;
+    }
+  }
+
+  .navbar p,
+  .navbar .dropdown .dropdown-item {
+    font-size: 1.3em;
+    color: white;
+  }
+}

@@ -1,0 +1,100 @@
+.news-page {
+
+  .header-image {
+    padding: 30px 0;
+    h2 {
+      color: white;
+    }
+  }
+
+  .section.filter-buttons {
+    background-color: $color-grey-bg;
+    padding: 5px 0;
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  .card-header {
+    background-color: transparent;
+    border: none;
+    .nav-link:not(.active):hover {
+      color: $body-color;
+    }
+    .nav-link.active {
+      box-shadow: none !important;
+      user-select: none;
+    }
+  }
+
+  .card {
+    .card-image {
+      padding-top: 2.4rem;
+      margin-bottom: 1rem;
+      text-align: right;
+      img {
+        box-shadow: none !important;
+      }
+    }
+
+    .card-title a {
+      color: $body-color;
+    }
+
+    .category {
+      color: $body-color;
+    }
+
+    .card-description {
+      color: $body-color;
+    }
+
+    .readmore {
+      margin-top: 1rem;
+
+      a {
+        color: $primary-color !important;
+
+        &:hover {
+          text-decoration: underline !important;
+          border: none !important;
+        }
+      }
+    }
+  }
+
+  ul.additional-coverage {
+    padding-left: 1rem;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .section.press-kit {
+    padding: 40px 0;
+    background-color: $color-grey-bg;
+    .title,
+    .title {
+      padding-top: 10px;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .nav-tabs {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .card .card-image {
+      padding-bottom: 1rem;
+    }
+
+    .section.new-articles {
+      padding-top: 1rem;
+    }
+  }
+
+}

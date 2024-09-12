@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="//highlightjs.org/static/demo/styles/vs2015.css">
+<title>Kasten | Kanister - An extensible framework for application-level data management on Kubernetes</title>
+{% endblock %}
+
+{% block javascript %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
+{% block content %}
+
+<div class="kanister-page">
+
+  {% include "partials/nav.partial.html" %}
+
+
+  {% include "partials/kanister/content.partial.html" %}
+
+
+  <footer class="background-grey">
+    {% include "partials/contact-footer.partial.html" %}
+  </footer>
+
+</div>
+
+{% endblock %}

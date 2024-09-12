@@ -1,0 +1,234 @@
+$z-index-nav: 200;
+$z-index-close-menu: 300;
+$z-index-mega-menu: 200;
+$z-index-mega-menu-item: 200;
+$z-index-nav-mobile: 150;
+$z-index-nav-mobile-sub: 1;
+
+$color-yellow: #fecd35;
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: $z-index-nav;
+
+  &.floating {
+    background-color: #010202;
+    box-shadow: $box-shadow;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .kasten-logo {
+    height: 30px;
+    margin-top: 8px;
+  }
+
+  .menu-btn,
+  .close-btn {
+    display: none;
+    position: fixed;
+    top: 3px;
+    right: 1rem;
+    color: white;
+    font-size: 2rem;
+    z-index: $z-index-close-menu;
+    a {
+      color: white;
+    }
+  }
+
+  .items {
+    display: flex;
+    transition: opacity 300ms;
+
+    .navitem {
+      padding: 1.3rem 1rem;
+      color: white;
+      position: relative;
+      cursor: pointer;
+
+      // We only show this option on mobile
+      &.home {
+        display: none;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .item-name {
+        white-space: nowrap;
+      }
+
+      &:hover {
+        // Prevents hover touch on mobile
+        @include media-breakpoint-up(lg) {
+          background-color: #212330;
+          .mega-menu {
+            opacity: 1;
+            z-index: $z-index-mega-menu;
+            display: flex;
+          }
+        }
+      }
+
+      .mega-menu {
+        opacity: 0;
+        display: none;
+        flex-wrap: wrap;
+        transition: opacity 200ms;
+        position: absolute;
+        top: 100%;
+        width: 20rem;
+        padding: 0.7rem 1rem;
+        background-color: #232f4f;
+        z-index: -1;
+        .menu-item {
+          padding: 0.5rem 1rem;
+          color: white;
+          z-index: $z-index-mega-menu-item;
+          .item-name {
+            white-space: nowrap;
+          }
+          .svg-icon {
+            font-size: 0.9em;
+            margin-right: 0.5rem;
+          }
+          .feature-box-1 {
+            padding: 0.8rem 1rem;
+            border-radius: 5px;
+            .feature-title {
+              font-size: 1.2rem;
+              color: #fecd35;
+              font-weight: normal;
+            }
+            .feature-description {
+              font-size: 0.8rem;
+            }
+            &:hover {
+              background-color: #091426; // $color-logo-blue;
+            }
+          }
+        } // .menu-item
+
+        &.use-cases {
+          width: 62rem;
+          left: -100%;
+        }
+        &.company {
+          width: 62rem;
+          right: -100%;
+        }
+      } // .mega-menu
+    } // .nav-item
+    button {
+      background-color: transparent;
+      border-radius: 0;
+      border: 1px solid #fecd35;
+      padding: 5px 15px;
+      margin-top: 17px;
+      &:hover {
+        background-color: rgba(#fecd35, 0.2);
+      }
+    }
+  } // .items
+
+  @include media-breakpoint-down(md) {
+    min-height: 50px;
+    background-color: transparent;
+    overflow-y: auto;
+
+    .container {
+      display: block;
+    }
+    .kasten-logo {
+      height: 20px;
+      margin-top: 8px;
+    }
+    .items {
+      display: none;
+      opacity: 0;
+    }
+    .menu-btn {
+      display: block;
+    }
+    .close-btn {
+      display: none;
+    }
+
+    &.open {
+      display: block;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: $z-index-nav-mobile;
+      background-color: #1c222f;
+      .menu-btn {
+        display: none;
+      }
+      .close-btn,
+      .items {
+        display: block;
+        opacity: 1;
+      }
+    }
+
+    .items {
+      margin-top: 4rem;
+      display: none;
+      text-align: center;
+      font-size: 1.6rem;
+
+      .navitem {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(white, 0.2);
+        .mega-menu {
+          transition: opacity 500ms;
+        }
+        &.home {
+          display: block;
+        }
+        &.open {
+          .mega-menu {
+            display: block;
+            opacity: 1;
+            position: static;
+            z-index: $z-index-nav-mobile-sub;
+            width: 100%;
+            padding: 0.5rem 0;
+            margin-top: 1rem;
+            background-color: rgba(black, 0.2);
+            .menu-item {
+              .feature-box-1 {
+                padding: 0;
+
+                .feature-title {
+                  font-weight: normal;
+                  font-size: 1.5rem;
+                }
+
+                .feature-description {
+                  display: none;
+                }
+              }
+            } // menu-item
+          } // mega-menu
+        } // open
+      } // navitem
+      button {
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 1rem 0 !important;
+      }
+    }
+  }
+} // nav

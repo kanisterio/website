@@ -1,0 +1,61 @@
+.article-page {
+  .section {
+    background-color: $color-lightgrey-bg;
+    padding-top: 0;
+  }
+
+  .header-image {
+    background-color: $color-dark;
+    padding: 30px 0;
+    h2 {
+      color: white;
+    }
+  }
+
+  .article {
+    background-color: white; 
+    padding: 3em 2em;
+
+    .author-logo {
+      max-width: 100px;
+      height: auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 1.5em;
+      line-height: 1.25em;
+      font-weight: 700;
+    }
+
+    .meta {
+      text-align: center;
+      margin: 1em 0 2.5em;
+      font-style: italic;
+      color: $color-logo-aqua-text;
+    }
+
+    .content {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      
+      .subtitle {
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.1em;
+        font-weight: 600  ;
+      }
+
+      li, p {
+        font-size: 0.9em;
+        font-weight: 400;
+      }
+
+      p.section-head {
+        margin-top: $spacer * 2;
+        font-weight: 800;
+      }
+    }
+  }
+}

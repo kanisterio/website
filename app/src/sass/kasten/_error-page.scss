@@ -1,0 +1,20 @@
+.error-pg {
+  .containers-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.2)), url('../img/background/extracolor5.jpg');
+    background-color: #293b60;
+  }
+
+  .header-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../img/background/color2.png');
+  }
+
+  .section-middle {
+    background-color: $color-dark;
+    height: 30vh;
+    color: white;
+    border-bottom: 1px dotted #ffffff24;
+  }
+
+  footer {
+  }
+}

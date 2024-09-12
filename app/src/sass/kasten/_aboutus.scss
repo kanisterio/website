@@ -1,0 +1,158 @@
+.about-us {
+
+  color: white;
+
+  .header-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url('../img/plant-office.jpg');
+    background-color: #585858;
+    padding: 4rem 0px;
+  }
+
+  .section-middle {
+    background-color: black;
+    height: 30vh;
+    color: white;
+  }
+
+  .section-team {
+    padding: 3rem 0;
+
+    .people-description {
+      color: white;
+    }
+  }
+
+  .card {
+    border-radius: 0;
+    text-align: left;
+
+    &:hover {
+      border-color: rgba(0,0,0,0.25);
+      .card-image img {
+        filter: grayscale(0) contrast(105%);
+      }
+      .card-body .category {
+        color: white;
+      }
+      .card-body .card-footer {
+        a.social-icon {
+          color: $link-color;
+        }
+      }
+    }
+
+    .card-image {
+      img {
+        box-shadow: none !important;
+        transition: all 500ms;
+        filter: grayscale(1) contrast(110%);
+        border-radius: 3px;
+      }
+    }
+
+    .card-body {
+      .category {
+        color: $text-muted;
+        text-transform: none;
+      }
+      .card-footer {
+        a.social-icon {
+          text-decoration: none;
+          border-bottom: none;
+          svg {
+            color: $text-muted;
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 0.5rem;
+          }
+          &:hover {
+            svg {
+              color: $body-color;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .card-body .category {
+    margin-bottom: 1rem;
+  }
+
+  .section-team {
+    padding-bottom: 15rem;
+  }
+
+  .section-location {
+    background-color: #636363;
+    color: #ffffffb5;
+
+    .come-visit {
+      padding: 1rem;
+      margin-top: 5.5rem;
+    }
+    .info {
+      padding-top: 2rem;
+    }
+    .description {
+      .info-title, p, a {
+        color: white;
+      }
+    }
+
+    .location-card {
+      margin-top: -5rem;
+      margin-bottom: 5rem;
+      width: 30rem;
+      .card-top {
+        .big-map {
+          height: 15rem;
+        }
+      }
+      .card-bottom {
+        padding: 0 2.5rem 2rem 3rem;
+        background-color: rgba(0,0,0,.2);
+        .info {
+          max-width: none;
+        }
+        .icon {
+          margin-top: 2rem;
+        }
+        .description p {
+          font-size: 1.2rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .big-map {
+    height: 55vh;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-down(xs) {
+    .card .card-body {
+      padding-left: 1rem;
+    }
+    .section-location {
+      .location-card {
+        width: auto;
+        margin: 2rem 0 2rem 0;
+        .card-bottom {
+          padding: 0 1rem 1rem 1rem;
+        }
+        .info .icon {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+}
+

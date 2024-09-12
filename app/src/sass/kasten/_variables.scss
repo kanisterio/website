@@ -1,0 +1,37 @@
+$color-logo-blue:           #446ca9;
+$color-logo-blue-rgb:       rgba(68, 108, 169, 1.0);
+$color-logo-blue-muted:     rgba(68, 108, 169, 0.08);
+$color-logo-aqua-text:      #2d384c;
+$color-logo-aqua:           #46A8C6;
+$color-grey-bg:             #f7f7f7;
+$color-aqua-bg:             rgba(70, 168, 198, .05);
+$color-aqua-border:         lighten($color-logo-aqua-text, 30%);
+$color-red:                 #c84c3a;
+$color-red-darker:          #b33b2a;
+$color-red-bg:              rgba(200, 76, 58, .03);
+$color-red-bg-darker:       rgba(200, 76, 58, .10);
+$color-red-bg-opaque:       #fff6f4;
+$color-orange:              #f96332;
+$color-yellow:              #fecd35;
+$color-orange-bg:           rgba(217, 101, 26, .05);
+$color-green:               #31b76d;
+$color-green-bg:            rgba(49, 183, 109, .05);
+$color-green-bg-darker:     rgba(49, 183, 109, .10);
+$color-green-bg-opaque:     #f4fff9;
+$color-green-darker:        #338457;
+$color-blue-light:          #7bacf5; // from complimentary colors
+$color-gray-bg:             #f7f7f7;
+$color-lightblack-bg:       #343435;
+$color-lightgrey-bg:        #f3f3f3;
+$color-border-light:        rgba(0,0,0,0.15);
+$color-border:              #cccccc;
+$color-dark:                #2c2c2c;
+$color-kubernetes:          #3c6ede;
+$color-grey-purple:         #bdc1e1; //a4abe3;//         #bdc1e1;
+$color-grey-text:           #b4bfc7;
+
+$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+
+
+// Bootstrap overrides
+$success: $color-green;

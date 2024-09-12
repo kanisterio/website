@@ -1,0 +1,83 @@
+.resources-page {
+  .header-image {
+    //background: radial-gradient(circle farthest-corner at right bottom, #003441 0, #1a465d 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), radial-gradient(circle farthest-corner at right bottom, #003441 0, #1a465d 100%);
+
+    color: white;
+    padding: 6rem 0 2rem 0;
+
+    .left-side {
+      text-align: left;
+      max-width: 45rem;
+
+      .k10-logo {
+        padding-top: 2rem;
+
+        svg {
+          max-width: 23rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+
+      .title {
+        font-size: 2.8rem;
+        color: $color-grey-text;
+      }
+    }
+
+    .right-side {
+      position: relative;
+      img {
+        position: absolute;
+        right: 1rem;
+        padding-top: 5px;
+        border: none;
+        max-width: 19rem;
+        box-shadow: $box-shadow;
+      }
+    }
+  }
+
+  .section-platform-videos {
+    background-color: #f5f8fa;
+
+    img,
+    .speakerdeck-embed {
+      box-shadow: $box-shadow;
+    }
+
+    .video-container {
+      max-width: 20rem;
+    }
+
+    .presentations {
+      .video-link {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .data-sheets {
+      .sheet {
+        width: 14rem;
+        img {
+          height: 17rem;
+        }
+      }
+    }
+  }
+
+
+
+  @include media-breakpoint-down(xs) {
+    .header-image .right-side img {
+      position: static;
+    }
+    .section-platform-videos {
+      .video-container {
+        max-width: none;
+      }
+    }
+  }
+
+}

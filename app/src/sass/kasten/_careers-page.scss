@@ -1,0 +1,132 @@
+.careers-page {
+
+  .header-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url('../img/office.jpg');
+    background-color: #0d0f12 !important;
+    padding: 9.5rem 0px;
+
+    h4.title {
+      margin-bottom: 4rem;
+    }
+  } // .header-image
+
+
+  .info {
+    .icon svg {
+      height: 3rem;
+      width: 3rem;
+    }
+    .description p {
+      color: $body-color;
+    }
+  }
+
+  .section-open-positions {
+    padding: 2rem 0 5rem 0;
+
+    h2.title {
+      margin-bottom: 4rem;
+    }
+  }
+
+
+  // Breezy plugin
+  #bzOpeningsContainer {
+    ul {
+      padding: 0;
+    }
+    ul.bzOpeningsList {
+      padding: 0;
+
+      li.bzOpening {
+        list-style-type: none;
+        padding: 1rem;
+        background-color: white;
+        margin-bottom: 1rem;
+
+        a {
+          width: 100%;
+          display: flex;
+
+          button, h2, .bzMeta {
+            align-self: center;
+          }
+        }
+
+        button {
+          @extend .btn;
+          @extend .btn-primary;
+          margin-right: 3rem;
+        }
+
+        h2 {
+          text-align: left;
+          font-size: 1.5rem;
+          width: 35rem;
+          margin-bottom: 0;
+          margin-right: 3rem;
+          font-weight: bold;
+          color: $body-color;
+        }
+
+        ul.bzMeta {
+          display: flex;
+          li {
+            list-style-type: none;
+            margin-right: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .header-image {
+      h1 {
+        font-size: 2.8em;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      .icon {
+        width: 100%;
+        text-align: center;
+        svg {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+      .info-title {
+        margin-top: 0;
+        text-align: center;
+      }
+      .description {
+        text-align: center;
+      }
+    }
+
+    .section-open-positions {
+      h2.title {
+        font-size: 2rem;
+      }
+
+      // Needed lots of specificity to make things stick
+      #bzOpeningsContainer ul.bzOpeningsList li.bzOpening {
+        text-align: center;
+        border: 1px solid #ccc;
+        a {
+          flex-direction: column;
+          button, h2 {
+            width: 100%;
+            text-align: center;
+            margin: 1rem auto;
+          }
+        }
+      }
+    }
+
+  } // media-breakpoint-down
+
+} // .careers-page

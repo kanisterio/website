@@ -1,0 +1,185 @@
+.databases-pg {
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      display: flex;
+      margin-bottom: 0.3rem;
+      .icon {
+        padding-right: 0.5rem;
+        svg {
+          height: 1.3rem;
+          width: 1.3rem;
+          vertical-align: middle;
+          margin-right: 0.3rem;
+        }
+      }
+      .text {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .header-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('../img/background/1.png');
+    background-color: #4c4c4c;
+    color: white;
+
+    .databases-logo {
+      padding-top: 2rem;
+      img {
+        width: 475px;
+      }
+    }
+  }
+
+  .info {
+    svg {
+      height: 70px;
+      width: 70px;
+    }
+  }
+
+  .section.why-databases {
+    .info {
+      .icon {
+        color: $body-color;
+      }
+      p {
+        color: $body-color;
+      }
+    }
+  }
+
+  .section.deployment-models {
+    background-color: #2c2c2c;
+    color: white;
+
+    .diagram-container {
+      background-color: #c6d6ee;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      border-radius: 20px;
+      img {
+        height: 17rem;
+        max-height: 100%;
+      }
+    }
+
+    ul {
+      margin-left: 1rem;
+      min-width: 25rem;
+
+      li {
+        color: white;
+      }
+    }
+
+  }
+
+  .section.database-functionality {
+
+    .sub-title {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      .k10-logo {
+        height: 1em;
+      }
+      .plus {
+        margin-top: -0.5rem;
+        font-size: 0.6em;
+        color: $text-muted;
+        svg {
+          margin-bottom: -0.3rem;
+          fill: #888;
+        }
+      }
+      .k8s-logo {
+        svg {
+          margin-bottom: -0.9rem;
+        }
+      }
+      svg {
+        height: 1.2em;
+        width: 1.2em;
+      }
+
+    }
+
+    .col-md {
+      background-color: #e9eef5;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      &:first-child {
+        margin-right: 1rem;
+      }
+    }
+
+    .list-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      margin-right: 1rem;
+      li {
+        margin-bottom: 0.8rem;
+        white-space: nowrap;
+        .icon {
+          color: mediumseagreen;
+          svg {
+            height: 1.4em;
+            width: 1.4em;
+          }
+        }
+        .text {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .section.simplify {
+    background-color: #44474c;
+    color: white;
+
+    .container .info {
+      .icon, .info-title, p {
+        color: white;
+        svg {
+          fill: currentColor;
+        }
+      }
+    }
+
+  }
+
+  @include media-breakpoint-down(xs) {
+    .section.deployment-models ul {
+      min-width: 0;
+      margin-left: 0;
+      margin-bottom: 4rem;
+    }
+    .section.database-functionality {
+      .col-md {
+        margin-right: 0 !important;
+      }
+      .list-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      ul {
+        margin-right: 0;
+        width: auto;
+      }
+    }
+
+  }
+
+}
+

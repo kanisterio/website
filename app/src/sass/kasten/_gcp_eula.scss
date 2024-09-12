@@ -1,0 +1,49 @@
+.gcp-eula {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+
+  .header-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../img/background/color14.png');
+    background-color: #4c8b86;
+    color: white;
+
+    .k10-logo {
+      padding-top: 2rem;
+      svg {
+        max-width: 27rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .section {
+    padding-bottom: 0;
+
+    .section-title {
+      font-weight: bold;
+      color: $color-orange;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  .clause {
+    margin-bottom: 0.5rem;
+    .clause-number {
+      font-weight: bold;
+      padding-right: 1rem;
+    }
+    .clause-title {
+      // font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+
+}
+
