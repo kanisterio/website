@@ -23,7 +23,6 @@ cmdArgs = commandLineArgs(optionDefinitions,
 // --------------------------------------------------
 
 var kanisterProdFiles = [
-  'CNAME', // GitHub Pages custom domain (kanister.dev); must land at _site/ root
   'app/dist/kanister-io/*',
   'app/dist/assets/css/main.*',
   'app/dist/favicon-kanister.ico',
